@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- the header is sentimentally defined as the start of the site -->
+    <header> 
+        <nav>
+            <!-- This style defines that the undefined list will flex according to the window size, it will not have any dots next to it and it will stay centered -->
+            <ul style="display: flex; list-style: none; justify-content: center; gap: 16px;">
+                <!-- the "a" tag is an anchor tag that combines tag under it and it basically allows us to make it clickable for page redirection -->
+                <!-- usint the target blank attribute this makes the page be opened in a seperate tab of the browser -->
+                <a href="./tables and defintions.html" target="_blank">
+                    <li>
+                        Tables
+                    </li>
+                </a>
+                <!-- by using the # we can point it to a section with the id of "definition" -->
+                <a href="#defintion">
+                    <li>
+                        defintion
+                    </li>
+                </a>
+                <li>
+                    navigation
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- this is a section and it very important to be used to devide part of website using the section tag,
+     we can use the id attribute to give a unique identifier for the section  -->
+    <section id="defintion">
+        <dl>
+            <dt>Definition title "dt" of a defintion list "dl"</dt>
+            <dd>
+                this is a definiton description 
+            </dd>
+            <dt>A good title</dt>
+            <dd>
+                yeeet
+            </dd>
+        </dl>
+    </section>
+
+    <section id="image_section">
+        <a href="/1/index.html" target="_blank">
+            <img src="./../1/dice.jpg" alt="dice" style="width: 30%;">
+        </a>
+    </section>
+
+    <section id="iframe">
+        <!-- this is an iframe that is website inside a website, this is used for embed code from youtube, wikipedia and many other sites that allow it -->
+        <iframe src="https://en.wikipedia.org/wiki/Ape" frameborder="0" width="1000" height="400"></iframe>
+    </section>
+
+    <!-- this allows the page to use the smooth transition between navigations for clickable content -->
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Forms Section </h1>
+
+    <!-- there used to be "method" attribute in forms however it is not require cause the html already know if it is PUT, GET, POST method
+    the action section requires the type of action it does, for example posting to an API and it will redirect you to the according API page   -->
+    <form>
+        <!-- the auto complete will allow the browser to use the autocomplete saved emails or things -->
+        <input name="login" autocomplete="on">
+        <input type="password" autocomplete="on">
+        <button>SUBMIT</button>
+        <!-- or we can use this: -->
+        <input type="submit" value="submit">
+    </form>
+
+    <h1> ALL inputs </h1>
+        <ul style="list-style: none;">
+            <li>
+                <label>input your Email</label>
+                <!-- the require attribute will only allow submits if the field is filled -->
+                <input type="text" required>  
+            </li>
+            <li>
+                <label>Input your Password</label>
+                <!-- this will not show you the entered text -->
+                <input type="password">  
+            </li>
+            <li>
+                <!-- this will have many things but will allow you to select only one item -->
+                <input type="radio">  
+            </li>
+            <li>
+                <!-- this will allow you choose many checkboxes -->
+                <input type="checkbox">  
+            </li>
+            <li>
+                <!-- this is a slider  with default value of 0 and min and max bewteen 0 and 20 (including) -->
+                <input type="range" value="0" min="0" max="20">
+            </li>
+            <li>
+                <!-- this is a color selector, individual for all browsers  -->
+                <input type="color">
+            </li>
+            <li>
+                <!-- month.day.year -->
+                <input type="date">
+            </li>
+            <li>
+                <!-- a text box for date -->
+                <input type="datetime">
+            </li>
+            <li>
+                <!-- day, month, year, hour, minutes -->
+                <input type="datetime-local">
+            </li>
+            <li>
+                <!-- will only allow email formated texts -->
+                <input type="email">
+            </li>
+            <li>
+                <!-- will only allow numbers -->
+                <!-- the place holder will have the text inside the input area -->
+                <input type="number" placeholder="ENTER NUMBER">
+            </li>
+            <li>
+                <!-- hours, minutes -->
+                <input type="time">
+            </li>
+            <li>
+                <!-- will only allow weeks -->
+                <input type="week">
+            </li>
+            <li>
+                <!-- accepts urls -->
+                <input type="url">
+            </li>
+            <li>
+                <!-- upload files -->
+                <input type="file">
+            </li>
+            <li>
+                <!-- telephone -->
+                <input type="tel">
+            </li>
+            <li>
+                <textarea name="descriptions" cols="60" rows="10"></textarea>
+            </li>
+        </ul>
+    <input type="submit" value="Send it">
+    <input type="reset" value="Reset the Forms">
+    <select>
+        <option>pirveli</option>
+        <option>meore</option>
+        <option>mesame</option>
+    </select>
+
+
+    <form>
+        the list attribute and id attribute binds both of them
+         -->
+        <datalist id="colors">
+            <option value="#fff000"> Yellow </option>
+            <option value="#3da000"> GReen</option>
+            <option value="#954000"> Brownish</option>
+        </datalist>
+        
+    </form>
+</body>
+</html>
